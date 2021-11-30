@@ -33,4 +33,11 @@ html,body{
 	padding-bottom: 56.25%;
 	padding-top: 30px;
 	position: relative;
+    @media screen {/*and (max-width: 960px){*/
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;        
+    }
 	}
