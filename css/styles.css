@@ -1,0 +1,192 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+/************************************
+            Header
+*************************************/
+
+header{
+    background-color: #4528D8;
+    margin: 0;
+    padding: 0;
+    height: 95px;
+    width: 100%;
+    left: 0;
+    bottom: 25px;
+}
+.logoimg{
+display: flex;
+margin-left: auto;
+margin-right: auto;
+padding-top: 23px;
+padding-bottom: 24px;
+}
+
+/************************************
+            Navigation
+*************************************/
+.navbar{
+width: 100%;
+height: 35px;
+background-color: #6A53E0;
+justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.navlinks{
+  float: right;
+  margin-left: 52px;
+}
+.anav{
+  color:#ffffff;
+  text-decoration: none;
+}
+li{
+    display: inline;
+    margin-right: 12px;
+}
+.anav:hover { color: #06133b}
+
+
+/************************************
+            article fondo
+*************************************/
+article{
+  background-color: #C8E6FF;
+}
+.sectpict{
+  height: 500px;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+}
+
+
+/************************************
+      mediaquerys for responsive
+*************************************/
+@media screen and /*(min-width: 481px) and*/ (max-width: 960px) {
+  article {
+    float: left;
+    width: 100%;
+  }
+  aside {
+    float: left;
+    height: 100%;
+  }
+  section{
+    min-width: 360px;
+    max-width: 960px;
+    height: 100%;
+  }
+  .small,.big{
+    width: 100%;
+  }
+
+}
+@media screen and (min-width: 960px) {
+  article {
+    float: left;
+    width: 50%;
+    height: 700px;
+  }
+  aside {
+    float: left;
+    height: 100%;
+  }
+  section{
+    max-width: 960px;
+    vertical-align: auto;
+  }
+
+  .small {
+    width: 186px;
+  }
+  .big{
+    width: 394px;
+  }
+  .name,.year{
+    float: left;
+  }
+  .LastName,.gender{
+    float: right;
+  }
+}
+/************************************
+            Formulario
+*************************************/
+input{
+  height: 26px;
+}
+select{
+  height: 26px;
+}
+
+form{
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+fieldset,.TyC{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  color: #777777;
+}
+input{
+  background: #FFFFFF;
+  border: 1px solid #DADDE0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+select{
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1px solid #DADDE0;
+  box-sizing: border-box;
+}
+input :hover{ color: #06133b}
+.buttonLog {
+  background: #4528D8;
+  border:none;
+  border-radius: 5px;
+  color: white;/*color of text*/
+  font-size: 13px;
+  cursor: pointer;
+  height: 33px;
+  width: 139px;
+  display: block;
+  margin: 0 auto;
+  }
+span{   color: #FF4646;}
+
+#TyC{
+  width: 18px;
+  height: 15px;
+
+  background: #FFFFFF;
+  border: 1px solid #DADDE0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+/************************************
+            Footer
+*************************************/
+footer{
+  width: 100%;
+  height: 47px;
+  background-color: #4528D8;
+  color: white;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  bottom: 0; 
+  @media screen and  (min-width: 960px) {
+    position: fixed;
+  }
+  @media screen and (max-width: 960px){
+    position: relative;    
+  }
+}

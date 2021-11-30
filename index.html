@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏴‍☠️ Ejercicio #1</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <header class="header" id="cont_header">
+        <img class="logoimg" src="images/seremprelogo.svg" alt="">
+    </header>
+    <nav class="navbar"> 
+            <ul class="navlinks">
+                <li><a class="anav" href="#">Inicio</a></li>
+                <li><a class="anav" href="#">Quienes somos</a></li>
+                <li><a class="anav" href="#">Contactanos</a></li>
+            </ul>   
+    </nav>
+    <main>
+            <article>
+                <section class="sectpict"></section>
+            </article>
+            <aside>
+                <form>
+                    <h1 style="color: #777;"> Crear Cuenta</h1>
+                    <fieldset class="name">
+                        <legend> Nombres</legend>
+                        <input class="small" name='name' type='text' id="name" >
+                        <span id="errorname"></span>
+                    </fieldset>
+                    <fieldset class="LastName">
+                        <legend>Apellidos</legend>
+                        <input class="small" name='LastName' type='text' id="LastName">
+                        <br>
+                        <span id="errorln"></span>
+                    </fieldset>
+                    <br>
+                    <fieldset class="email">
+                        <legend>Correo Electrónico</legend>
+                        <input class="big" type="email" name="email" id="email">
+                        <br>
+                        <span id="errmail"></span>
+                    </fieldset>
+                    <br>
+                    <fieldset class="year">
+                        <legend>Edad</legend>
+                        <input class="small" type="text" name="year" id="year">
+                        <br>
+                        <span id="erryear"></span>
+                    </fieldset>                  
+                    <fieldset class="gender">
+                        <legend>Sexo</legend>
+                        <select class="small" name="gender" id="gender">
+                            <option value="default"></option>
+                            <option value="male">Masculino</option>
+                            <option value="female">Femenino</option>
+                        </select>
+                        <br>
+                        <span id="errgender"></span>
+                    </fieldset>
+                    <br>
+                    <fieldset class="password">
+                        <legend>Contraseña</legend>
+                        <input class="big" type="password" name="password" id="password">
+                        <br>
+                        <span id="errpass"></span>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <input type="checkbox" id="TyC"> 
+                        <label for="TyC">
+                             Aceptar <a class="TyC" href="terms.html" target="_blank">Terminos y condiciones</a>
+                        </label>
+                        <br>
+                        <span id="errtyc"></span>
+                    </fieldset>
+                    <input class="buttonLog" type="submit" onclick="return validate()" value="Enviar">
+                   </form>
+            </aside>       
+    </main>
+    <footer>
+            <p>COPYRIGHT © 2021 SEREMPRE ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
