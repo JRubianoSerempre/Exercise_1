@@ -26,7 +26,7 @@ function validate(){
         errorname.innerHTML='Campo requerido';
     }
 
-    if(lastnames==null || lastnames.value ==''){
+    if(lastnames.value==null || lastnames.value ==''){
         errorlname.innerHTML='Campo requerido';
     }
 //Validation email
